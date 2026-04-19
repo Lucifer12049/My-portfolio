@@ -69,14 +69,16 @@ a {
   top: 0;
   z-index: 20;
   padding-top: 18px;
+  width: min(100%, var(--max-width));
+  margin: 0 auto;
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  padding: 16px 22px;
+  gap: 18px;
+  padding: 14px 18px;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: rgba(17, 17, 17, 0.72);
@@ -95,12 +97,13 @@ a {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 16px;
 }
 
 .nav-links a {
   color: var(--muted);
-  font-size: 0.96rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
   transition: color 0.25s ease, transform 0.25s ease;
 }
 
@@ -132,7 +135,7 @@ a {
   border-radius: 999px;
   background: transparent;
   color: var(--text);
-  padding: 10px 14px;
+  padding: 9px 13px;
   font: inherit;
 }
 
